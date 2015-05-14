@@ -45,7 +45,7 @@
             <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                 [<span class='inner'>&#x2212;</span>]
             </a>
-        </span><a id='src-0' class='srclink' href='../src/wayland_kbd/lib.rs.html#1-26' title='goto source code'>[src]</a></span></h1>
+        </span><a id='src-0' class='srclink' href='../src/wayland_kbd/lib.rs.html#1-27' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Keyboard mapping utility for <code>wayland-client</code> using libxkbcommon.</p>
 
 <p>This library provides a simple wrapper for the wayland Keyboard objects,
@@ -54,7 +54,8 @@ library dynamically and thus not being linked to it).</p>
 
 <p>To use it, simply call <code>MappedKeyboard::new(..)</code> to wrap you keyboard object
 and set the key_action callback. This callback will be provided the keycode,
-the new state of the key (up or down), as well as a <code>KbState</code> handle.</p>
+the new state of the key (up or down), the keyboard ID,
+as well as a <code>KbState</code> handle.</p>
 
 <p>This handle will allow you to retrive the keysym associated to the keycode
 and compare it to the values defined in the <code>keysyms</code> module, or directly
